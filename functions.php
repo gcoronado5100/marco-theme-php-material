@@ -15,6 +15,7 @@ define('MC_THEME_URI', get_stylesheet_directory_uri()); // Representa la direcio
 
 
 include(MC_THEME_DIR . '/includes/admin/mc-enqueue.php');
+include(MC_THEME_DIR . '/includes/admin/mc-theme-support.php');
 
 
 // Hooks
@@ -24,4 +25,5 @@ include(MC_THEME_DIR . '/includes/admin/mc-enqueue.php');
  */
 
 // Embebemos archivos personalizados de CSS y JS
+add_action('init', 'mc_theme_register_my_menus');
 add_action('wp_enqueue_scripts', 'mc_enqueue_cb');
