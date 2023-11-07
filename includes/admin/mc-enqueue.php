@@ -9,10 +9,10 @@ function mc_enqueue_cb()
 {
     // CSS
     // Enqueue Font Awesome CSS
-    wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.11.2/css/all.css', [], null, 'all');
+    wp_enqueue_style('mc-theme-font-awesome', 'https://use.fontawesome.com/releases/v5.11.2/css/all.css', [], null, 'all');
 
     // Enqueue Google Fonts Roboto CSS
-    wp_enqueue_style('google-fonts-roboto', 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap', [], null, 'all');
+    wp_enqueue_style('mc-theme-google-fonts-roboto', 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap', [], null, 'all');
 
     // Enqueue mdb-min
     wp_enqueue_style('mc-theme-mdb-min',MC_THEME_URI . '/assets/css/mdb.min.css', [], null, 'all');
